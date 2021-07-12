@@ -1,0 +1,9 @@
+.container
+    .col-lg-12.mt-5
+        %h4 List of Users
+        %ol
+            - @users.each do |key, value|
+                %li
+                    = key
+                    %ul
+                        %li= value
